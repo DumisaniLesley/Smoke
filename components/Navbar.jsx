@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaLinkedin, FaFacebookF, FaGithub, FaTwitter, FaThLarge } from 'react-icons/fa'
 import { FiDownload } from 'react-icons/fi'
 import Image from 'next/image'
+import Dumisani from '../public/assets/dumisani.png'
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className='fixed w-full h-24 bg-white shadow-xl z-50'>
       <div className='flex justify-between h-full items-center max-w-[80%] mx-auto text-black text-xl font-bold'>
-        <Image src='/../public/assets/dumisani.png' width='150' height='100' alt='Logo'/>
+        <Image src={Dumisani} width='150' height='100' alt='Logo'/>
         <div>
           <ul className='hidden md:flex items-center'>
             <Link href='/'>
